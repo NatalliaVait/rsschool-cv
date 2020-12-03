@@ -1,0 +1,51 @@
+header {
+  background-color: violet;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+body {
+  max-width: 800px;
+  border: 10px solid cornflowerblue;
+  position: relative;
+}
+main {
+  background-color: wheat;
+}
+.description {
+  text-align: center;
+  background-color: thistle;
+}
+.title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+footer {
+  background-color: violet;
+  text-align: center;
+}
+.section {
+  display: flex;
+  background-color: thistle;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.item-a {
+  width: 50%;
+  justify-content: left;
+}
+.item-b {
+  width: 50%;
+  justify-content: right;
+}
