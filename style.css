@@ -1,14 +1,21 @@
 header {
   background-color: violet;
 }
+.name {
+  display: flex;
+  justify-content: center;
+}
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 body {
-  max-width: 800px;
-  border: 10px solid cornflowerblue;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: rgb(247, 240, 240);
 }
 main {
   background-color: wheat;
@@ -22,6 +29,14 @@ main {
   text-align: center;
   font-weight: bold;
 }
+img {
+  margin-bottom: 20px;
+  border-radius: 40%;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
 h2 {
   font-size: 25px;
   font-weight: bold;
@@ -30,10 +45,10 @@ h2 {
 footer {
   background-color: violet;
   text-align: center;
+  padding: 10px;
 }
-.section {
-  display: flex;
-  background-color: thistle;
+.contact-details {
+  margin: 40px;
 }
 .items {
   display: flex;
@@ -48,4 +63,18 @@ footer {
 .item-b {
   width: 50%;
   justify-content: right;
+}
+@media screen and (max-width: 410px) {
+  header div {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .items {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
 }
